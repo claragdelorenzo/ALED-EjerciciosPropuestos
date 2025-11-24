@@ -7,7 +7,12 @@ public class Main {
 
 		for (int i = 0; i < m.getNumFilosofos(); i++)
 			new Filosofo(m, i).start();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+		}
 
+		
 	}
 
 }
